@@ -1,33 +1,23 @@
 {
   "name": "techskills-padrao",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "cross-env NODE_ENV=dev nodemon --exec ts-node src/server.ts",
     "start:hml": "cross-env NODE_ENV=hml nodemon --exec ts-node src/server.ts",
     "start:prd": "cross-env NODE_ENV=prd nodemon --exec ts-node src/server.ts",
     "build": "tsc",
-    "start": "NODE_ENV=prd node dist/server.js"    
-  }
-
-
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JonathannBarbosa/techskills-padrao.git"
+    "start": "NODE_ENV=prd node dist/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JonathannBarbosa/techskills-padrao/issues"
-  },
-  "homepage": "https://github.com/JonathannBarbosa/techskills-padrao#readme",
+  "description": "",
   "devDependencies": {
     "@types/dotenv": "^6.1.1",
     "@types/express": "^5.0.3",
+    "@types/morgan": "^1.9.10",
     "@types/node": "^24.3.0",
     "cross-env": "^10.0.0",
     "nodemon": "^3.1.10",
@@ -35,7 +25,9 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^17.2.1",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "morgan": "^1.10.1"
   }
 }
